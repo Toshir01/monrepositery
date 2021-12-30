@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Nippon101 : Home</title>
+    <style>
+      nav ul li a{
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+
+      <nav>
+          <input type="checkbox" id="check">
+
+          <label for="check" class="checkbtn">
+            <img src="images/menu.png" alt="menu">
+          </label>
+          
+        <label class="logo">
+          <a href="index.htm">
+            <img class="logo" src="images/logo.png" alt="logo-here">
+          </a>
+        </label>
+
+        <ul>
+          <li><a class="active" href="index.htm">Home</a></li>
+          <li><a href="pages/Interests.html">Interests</a></li>
+          <li><a href="pages/Explore.html">Explore</a></li>
+          <li><a href="pages/Destinations.html">Destinations</a></li>
+          <li><a href="pages/Actualities&News.htm">Actualities&News</a></li>
+          <li><a  href="pages/feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+  <section id="section"></section> 
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/Cherry.jpg" style="width:100%">
+          <div class="text">Cherry Blossom</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/Tokyo.png" style="width:100%">
+          <div class="text">Tokyo, Japan</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/Castle.jpg" style="width:100%">
+          <div class="text">Chureito Pagoda</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+    </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+    <!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+       <img src="images/flag.png" class="w3-round w3-image w3-opacity-min" alt="Japan's flag" width="600" height="750">
+      </div>
+  
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">About Japan</h1><br>
+        <h5 class="w3-center">日本: Nippon or Nihon</h5>
+        <p class="w3-large"><b>Japan is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south. Part of the Ring of Fire, Japan spans an archipelago of 6852 islands covering 377,975 square kilometers; the five main islands are Hokkaido, Honshu, Shikoku, Kyushu, and Okinawa. Tokyo is Japan's capital and largest city; other major cities include Yokohama, Osaka, Nagoya, Sapporo, Fukuoka, Kobe, and Kyoto.</b> <br><br> </p>
+        <p class="w3-large w3-text-grey w3-hide-medium"> <b>The culture of Japan has changed greatly over the millennia, from the country's prehistoric Jōmon Period, to its contemporary modern culture, which absorbs influences from Asia and other regions of the world.</b></p>
+      </div>
+    </div>
+    
+    <hr>
+    
+    <!-- Menu Section -->
+    <div class="w3-row w3-padding-64" id="menu">
+      <div class="w3-col l6 w3-padding-large">
+        <h1 class="w3-center">Japan's regions</h1><br>
+        <h4>Hokkaido</h4> <p class="w3-text-grey">It's known for its volcanoes and natural hot springs.</p> 
+        <br>
+        <h4>Tohoku</h4> <p class="w3-text-grey">It's known for its beautiful lakes and Hirosaki Castle.</p> 
+        <br>
+        <h4>Kanto</h4> <p class="w3-text-grey">It's known for Japan's seat of government, Tokyo Skytree and the Shibuya Crossing</p> 
+        <br>
+        <h4>Chubu</h4> <p class="w3-text-grey">It's known for its sake (an alcoholic beverage) and koshihikari rice.</p> 
+        <br>
+        <h4>Kansai</h4> <p class="w3-text-grey">It's known for Osaka and Himeji castles and other historical places.</p> 
+        <br>
+        <h4>Chugoku</h4> <p class="w3-text-grey">It's known for  the city of Hiroshima; it was largely destroyed by an atomic bomb during World War II.</p> 
+        <br>
+        <h4>Shikoku</h4> <p class="w3-text-grey">It's known for its 88-temple pilgrimage of temples and festivals.</p> 
+        <br>
+        <h4>Kyushu</h4> <p class="w3-text-grey">It’s known for its active volcanoes and awsesome beaches.</p> 
+        <br>
+        <h4>Okinawa</h4> <p class="w3-text-grey">It's known for being a place where people come for scuba diving and its unique cuisine.</p> 
+        <br>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="w3-col l6 w3-padding-large">
+        <img src="images/map.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+      </div>
+    </div>
+  
+    <hr>
+  
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-64" id="contact">
+      <h1>Contact</h1><br>
+      
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="First name" required name="Firstname"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Nickname" required name="NicknamE"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Your email" required name="Message"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Your message" required name="Message"></p>
+        <p><button class="w3-button w3-light-grey w3-section" type="submit"> <b>SEND MESSAGE</b> </button></p>
+      </form>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br>
+  <!-- End page content -->
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <div id="footer">
+        <p style="color: black; font-family: 'ariel'; font-size: 20px;">Copyright &copy; nippon101.com</p>
+    </div>
+  </footer>
+</body>
+</html>

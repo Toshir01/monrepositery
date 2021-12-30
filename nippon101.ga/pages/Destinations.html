@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/Destinations.css" type="text/css">
+    <link rel="stylesheet" href="../css/Destinations-navbar.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nippon101 : Destinations</title>
+    <style>
+      nav ul li a{
+        font-weight: bold;
+        
+      }
+      body{
+        background-color: rgb(66, 66, 66);
+      }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+    <header>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><a href="../index.htm"><img class="logo" src="../images/logo.png" alt="logo-here"></a></label>
+            <ul>
+              <li><a  href="../index.htm">Home</a></li>
+              <li><a href="Interests.html">Interests</a></li>
+              <li><a href="Explore.html">Explore</a></li>
+              <li><a class="active" href="Destinations.html">Destinations</a></li>
+              <li><a href="Actualities&News.htm">Actualities&News</a></li>
+              <li><a  href="feedback">Feedback</a></li>
+            </ul>
+          </nav>
+      <section id="section"></section>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="../images/Destination1.png" style="width:100%">
+          <div class="text">Akihabara</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../images/Destination2.jpg" style="width:100%">
+          <div class="text">Japan Island</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../images/Destination3.png" style="width:100%">
+          <div class="text">Sumida Cafe</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../images/Destination4.png" style="width:100%">
+          <div class="text">Capsule Hotel</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../images/Destination5.png" style="width:100%">
+          <div class="text">Little Nap Coffee</div>
+        </div>
+
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+    </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+    
+   
+
+   <main>
+    <br><br><br>
+        <img class="under-construction" src="../images/Destinations-bg.jpg" alt="">
+    <br><br><br>
+   </main>       
+
+   <footer>
+    <div
+    id="footer">
+      <p style="color: black; font-family: 'ariel'; font-size: 20px;">Copyright &copy; nippon101.com</p>
+    </div>
+      
+  </footer>
+</body>
+</html>

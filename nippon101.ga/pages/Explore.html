@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/Explore.css" type="text/css">
+    <link rel="stylesheet" href="../css/Explore-navbar.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nippon101: Explore</title>
+</head>
+<body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <img src="../images/menu.png" alt="">
+        </label>
+        <label class="logo"><a href="../index.htm"><img class="logo" src="../images/logo.png" alt="logo-here"></a></label>
+            <ul>
+              <li><a href="../index.htm">Home</a></li>
+              <li><a href="Interests.html">Interests</a></li>
+              <li><a class="active" href="Explore.html">Explore</a></li>
+              <li><a href="Destinations.html">Destinations</a></li>
+              <li><a href="Actualities&News.htm">Actualities&News</a></li>
+              <li><a  href="feedback.html">Feedback</a></li>
+            </ul>
+          </nav>
+      <section id="section"></section>
+    
+    </header>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="../images/fuji.png" style="width:100%">
+          <div class="text">Fuji Mountain</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../images/Cherry.jpg" style="width:100%">
+          <div class="text">Festival</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../images/marriage.png" style="width:100%">
+          <div class="text">traditional Marriage</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+    </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+      
+      <h1>Explore</h1>
+      <br>
+
+      <div class="container2">
+
+          <div>
+            <h2>Events</h2><br>
+            <br>
+            <img src="../images/event.png" alt="Festival" class="smt">
+            <p>Most festivals and events in Japan center around Buddhist or Shinto religious holidays. Nature-focused events such as viewing cherry and plum blossoms and commemorating historical events are much loved by the Japanese people. Among those festivals we find Sapporo Snow Festival, Sanja Matsuri, Takayama Matsuri, Hanami festival, Nachi Fire Festival, and O-Bon (Festival of the Dead). </p>
+            
+          </div>
+          
+      
+        <br>
+
+
+        <div>
+          <h2>Seasons</h2><br>
+          <br>
+          <img src="../images/season.png" alt="Seasons in Japan" class="smt">
+          <p>In Japan, one year is divided into four periods. The period from March to May is spring, June to August is summer, September to November is autumn, and December to February is winter. Depending on the season, the temperature and climate vary significantly.<br>The aesthetic changes in nature such as cherry blossoms in spring or red and yellow leaves in autumn are part of Japan's charm. Japan itself is considered one of the top four season travel destinations on the planet.</p>
+          
+        </div>
+        
+      
+        <br>
+      
+
+        <div>
+          <h2>Culture</h2><br>
+          <br>
+          <img src="../images/culture.png" alt="Respect" class="smt">
+          <p>Japan has a fascinating and multifaceted culture; on the one hand, it is steeped in the deepest of traditions dating back thousands of years; on the other, it is a society in a continual state of rapid flux, with continually shifting fads<br>and fashions and technological development that constantly pushes back the boundaries of the possible.<br> is part of what makes it such a fascinating country to visit.</p>
+          
+        </div>
+        <br>
+        
+  
+        <div>
+          <h2>Patrimony</h2><br>
+            <br>
+            <img src="../images/path.png" alt="Path" class="smt">
+            <p>The heritage of Japan is the real Japan. The unique culture and traditions shaped by nature, climate, and Japanese people over the centuries can be found in every corner of this island nation. Japan's heritage ranges from famous cultural possessions known around the world to little-known. such as blacksmithing and others.</p>
+              
+        </div>
+       
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <footer>
+        <div class="footer">
+          <h3>Copyright &copy; nippon101.com</h3>
+        </div>
+        
+      </footer>
+      
+</body>
+</html>

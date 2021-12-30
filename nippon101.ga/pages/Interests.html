@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/Interests-navbar.css">
+    <link rel="stylesheet" href="../css/Interests.css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nippon101: Interests</title>
+</head>
+<body>
+    <header>
+            <nav>
+                <input type="checkbox" id="check">  
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>    
+                <label class="logo"><a href="../index.htm"><img class="logo" src="../images/logo.png" alt="logo-here"></a></label>  
+              
+
+              <ul>
+                  <li><a href="../index.htm">Home</a></li>
+
+                  <li><a class="active" href="Interests.html">Interests</a></li>
+
+                  <li><a href="Explore.html">Explore</a></li>
+
+                  <li><a href="Destinations.html">Destinations</a></li>
+
+                  <li><a href="Actualities&News.htm">Actualities&News</a></li>
+                  
+                  <li><a  href="feedback.html">Feedback</a></li>
+              </ul>   
+              
+              
+          </nav>
+    </header>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="../images/food.png" style="width:100%">
+          <div class="text">Japanese Food</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../images/temple.png" style="width:100%">
+          <div class="text">Itsukushima Shrine</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../images/anime.png" style="width:100%">
+          <div class="text">Anime</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+    </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+      
+      <h1>Interests</h1>
+      <br>
+
+      <div class="container2">
+        
+          <div>
+            
+            <h2>Food</h2><br>
+            <br>
+            <img src="../images/table.png" alt="Japanese cuisine" class="smt">
+            
+            <p>Japanese cuisine encompasses the regional and traditional foods of Japan, which have developed through centuries of political, economic, and social changes. The traditional cuisine of Japan is based on rice with miso soup and other dishes; there is an emphasis on seasonal ingredients. Side dishes often consist of fish, pickled vegetables, and vegetables cooked in broth. Seafood is common, often grilled, but also served raw as sashimi or in sushi. Seafood and vegetables are also deep-fried in a light batter, as tempura. Apart from rice, a staple includes noodles, such as soba and udon.</p>
+            
+          </div>
+          
+      
+        <br>
+
+
+        <div>
+          <h2>History</h2><br>
+          <br>
+          <img src="../images/history.png" alt="Jomon period" class="smt">
+          <p>The first human inhabitants of the Japanese archipelago have been traced to prehistoric times around 30,000 BCE. The Jōmon period, named after its cord-marked pottery, was followed by the Yayoi people in the first millennium BCE when new inventions were introduced from Asia. Around the 4th century BCE, the Yayoi people from the continent immigrated to the Japanese archipelago and introduced iron technology and agricultural civilization. Because they had an agricultural civilization, the population of the Yayoi began to grow rapidly and overwhelm the Jōmon people, natives of the Japanese archipelago who were hunter-gatherers. Between the fourth to ninth century, Japan's many kingdoms and tribes gradually came to be unified under a centralized government, nominally controlled by the Emperor of Japan.</p>
+          
+        </div>
+        
+      
+        <br>
+      
+
+        <div>
+          <h2>Temples</h2><br>
+          <br>
+          <img src="../images/shrine.png" alt="Asakusa Shrine" class="smt">
+          <p>Temples (寺, tera) are the places of worship in Japanese Buddhism. Virtually every Japanese municipality has at least one temple, while large cultural centers like Kyoto have several hundred. Temples store and display sacred Buddhist objects. Some temples used to be monasteries, and some still function as such, also some became museums.<br> shogunates (the title of Japan's leaders from 1185 to 1868) have made it a priority to update and rebuild Buddhist temples since the Momoyama period,  so we find them together with Shinto shrines are considered to be amongst the most numerous, famous, and important buildings in Japan.</p>
+          
+        </div>
+        <br>
+        
+  
+        <div>
+          <h2>Martial Arts</h2><br>
+            <br>
+            <img src="../images/Karate.png" alt="Karate" class="smt">
+            <p>Japan has a number of unique martial arts that are mostly modern variations of traditions that extend back for hundreds, or in some cases thousands of years.<br>Historically, Japanese martial arts were used as a means of defense and attack in warfare. However, in modern times they are practiced for their educational value - encompassing cultural, physical, moral, aesthetic and spiritual dimensions. Most are viewed much like a sport with an emphasis on disciplining the mind, and the most famous of them are Kendo, Judo, Kyudo, Yabusame, Aikido, Sumo, and of course the world-famous Karate.</p>
+              
+        </div>
+            
+        
+        
+        <br>
+      
+
+        <div>
+          <h2>Manga & Anime</h2><br>
+          <br>
+          <img src="../images/manga.png" alt="Japanese Comic" class="smt">
+          <p>In Japan, the term anime is used to refer to all animations, much like cartoon is in English. Only elsewhere has anime become the term associated exclusively with animation from Japan. Anime often involves complex storylines and characters with adult themes.<br>
+            Manga is a comic book. Unlike anime, manga is often published in black and white, because they are usually published weekly and printing them in color would take too much time and money.<br>
+            Manga is usually fairly cheap to publish and only requires a small number of artists to produce, or even one mangaka to do the whole work.</p>
+          
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      
+      <footer>
+        <div id="footer">
+          <h3 class="p" style="color: black; font-family: 'ariel'; font-size: 20px;">Copyright &copy; nippon101.com</h3> 
+        </div>
+        
+      </footer>
+      
+</body>
+</html>
